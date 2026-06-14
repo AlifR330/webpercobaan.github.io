@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Alizhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Toko Alizhan</h1>
+
+    <nav>
+        <a href="#produk">Produk</a>
+        <a href="#keranjang">Keranjang</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Selamat Datang di Toko Kami</h2>
+    <p>Produk Berkualitas dengan Harga Terbaik</p>
+</section>
+
+<section id="produk" class="produk-container">
+
+    <div class="card">
+        <img src="https://picsum.photos/300?1">
+        <h3>Keyboard Gaming</h3>
+        <p>Rp 250.000</p>
+        <button onclick="tambahKeranjang('Keyboard Gaming',250000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300?2">
+        <h3>Mouse Gaming</h3>
+        <p>Rp 150.000</p>
+        <button onclick="tambahKeranjang('Mouse Gaming',150000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300?3">
+        <h3>Headset Gaming</h3>
+        <p>Rp 350.000</p>
+        <button onclick="tambahKeranjang('Headset Gaming',350000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+</section>
+
+<section id="keranjang" class="keranjang">
+
+    <h2>Keranjang Belanja</h2>
+
+    <ul id="listKeranjang"></ul>
+
+    <h3>Total: Rp <span id="total">0</span></h3>
+
+    <button class="checkout" onclick="checkout()">
+        Checkout
+    </button>
+
+</section>
+
+<footer>
+    <p>© 2026 Toko Alizhan</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
