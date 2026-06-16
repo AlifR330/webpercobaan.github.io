@@ -34,3 +34,4 @@ function checkout(){
 
     document.getElementById("total").innerText = "0";
 }
+function 
